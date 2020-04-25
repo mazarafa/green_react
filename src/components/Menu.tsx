@@ -1,6 +1,5 @@
 import React from 'react';
 import { IonMenuToggle, IonItem, IonIcon, IonLabel, IonMenu, IonContent, IonList, IonListHeader, IonAvatar} from '@ionic/react';
-
 import './Menu.css'
 
 
@@ -8,12 +7,14 @@ const routes = {
     appPages: [
         {
             title: "Feed",
-            path: "/feed"
+            path: "/feed",
+            icon:'Home'
            
         },
         {
             title: "Notas",
-            path: "/notas"
+            path: "/notas",
+            icon:'create'
         },
         {
             title: "Horarios",
@@ -42,9 +43,10 @@ const routes = {
             path: "/Info"
         },
         {
-            title: "Configuração",
-            path: "/Configuração"
+            title: "Configuracao",
+            path: "/Configuracao"
         },
+        
 
     ]
 }
@@ -65,9 +67,9 @@ const Menu: React.FC = () => {
                     <IonListHeader color="primary">
                         <IonLabel className="header-text">
                             <IonAvatar>
-                                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+                                <img src="assets/img/maria.jpg" />
                             </IonAvatar>
-                            <h1>Fulano.Ciclano</h1>
+                            <h1>Maria.julia</h1>
                             <h3>Campus Chapecó</h3>
                         </IonLabel>
                     </IonListHeader>
